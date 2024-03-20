@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bruno</title>
+    <style>
+      /* document.getElementsByTagName("body")[0].style.background = "#696969" */
+      body {
+        background: #191919;
+        color: aliceblue;
+        /* text-shadow: 2px -2px 2px #888  */
+      }
+      h1 {
+        /* background: gray; */
+        text-align: center;
+      }
+      p {
+        color: rgb(185, 185, 185);
+        text-align: center;
+      }
+      img {
+        border-radius: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Eu gosto de arroz</h1>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur maximus
+      massa lectus, ultrices egestas dolor tristique quis. Nunc blandit
+      fringilla lectus, at pellentesque felis imperdiet a. Nulla bibendum sem
+      mi, ut luctus quam ultrices et. Vivamus eu diam vitae augue fringilla
+      pellentesque ac non ipsum. Nulla id dui lacus. Lorem ipsum dolor sit amet,
+      consectetur adipiscing elit. Sed aliquet enim vitae turpis faucibus
+      interdum. Curabitur ullamcorper mauris eget viverra vehicula. Cras
+      faucibus nec augue tincidunt elementum. Duis accumsan mauris sed nisl
+      tristique, maximus tincidunt justo pharetra. Morbi faucibus fermentum
+      consectetur. Pellentesque vulputate, sem quis accumsan dapibus, libero
+      ante varius odio, vitae maximus turpis velit vel odio.
+    </p>
+
+    <h2 style="text-align: center">Alerta de mensagem!</h2>
+    <p style="text-align: center">
+      <button onclick="alerta()" style="">😎Alerta😎</button>
+    </p>
+
+    <h2 style="text-align: center">
+      Altere a cor do fundo do site clicando em uma das cores
+    </h2>
+    <p style="text-align: center">
+      <button onclick="escolheCor('red')">Vermelho</button>
+      <button onclick="escolheCor('blue')">Azul</button>
+      <button onclick="escolheCor('green')">Verde</button>
+      <button onclick="escolheCor('#191919')">Original</button>
+      <button onclick="escolheCor()">Escolha a cor</button>
+    </p>
+
+    <img
+      src="https://i.pinimg.com/564x/06/a9/cc/06a9cc85f9dc983048afc334a92351e1.jpg"
+    />
+  </body>
+  <script>
+    escolheCor = (cor) => {
+      if (cor !== "") {
+        document.querySelector("body").style.background = cor;
+      }
+      if (cor == null) {
+        document.querySelector("body").style.background = prompt(
+          "Informe uma cor em inglês:"
+        );
+      }
+    };
+
+    console.log("Olá mundo");
+
+    function alerta() {
+      var nome = prompt("Olá informe seu nome");
+      alert("Este é um alerta!👌");
+    }
+  </script>
+</html>

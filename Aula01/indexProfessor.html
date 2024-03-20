@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prof-Castello</title>
+
+    <style>
+      body {
+        background: #f286ab;
+        color: rgb(0, 0, 0);
+      }
+
+      h1 {
+        /* text-shadow: -4px 2px 2px #888; */
+        color: rgb(0, 0, 0);
+        text-align: center;
+        /* background: #888; */
+      }
+      del {
+        text-decoration-color: #000;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Aula 01 - HTML | CSS | JS</h1>
+
+    <h2>Alerta de mensagem!</h2>
+    <p style="text-align: center">
+      <button onclick="alerta()" style="">🚨Alerta!🚨</button>
+    </p>
+
+    <h2>Altere a cor do fundo do site clicando em uma das cores abaixo:</h2>
+    <p style="text-align: center">
+      <!-- ip professor 192.168.1.141:5500/ -->
+      <button onclick="escolheCor('red')">Vermelho</button>
+      <button onclick="escolheCor('blue')">Azul</button>
+      <button onclick="escolheCor('green')">Verde</button>
+      <button onclick="escolheCor('#f286ab')">Original</button>
+      <button onclick="escolheCor()">Escolha a cor</button>
+    </p>
+    <!-- <p>document.getElementsByTagName("body")[0].style.background = "#f286ab"</p> -->
+  </body>
+  <script>
+    escolheCor = (cor) => {
+      if (cor !== "") {
+        document.querySelector("body").style.background = cor;
+      }
+      if (cor == null) {
+        document.querySelector("body").style.background = prompt(
+          "Informe uma cor em inglês:"
+        );
+      }
+    };
+
+    console.log("Olá Mundo!");
+
+    function alerta() {
+      var nome = prompt("Olá, informe seu nome:");
+      alert(`Olá ${nome}!`);
+    }
+
+    // function vermelho() {
+    //   document.getElementsByTagName("body")[0].style.background = "red";
+    // }
+
+    // azul = () => {
+    //   document.getElementsByTagName("body")[0].style.background = "blue";
+    // };
+
+    // verde = () => {
+    //   document.getElementsByTagName("body")[0].style.background = "green";
+    // };
+  </script>
+</html>

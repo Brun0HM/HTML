@@ -13,19 +13,34 @@
       <a href="https://github.com/Brun0HM/">Git-hub</a>
     </h1>
 
-    <form class ="textoCentro" action="" >
-        <h3>Entre em contato</h3>
-        <p>Ficaremos felizes em atendelo-lo</p>
+    <form class="textoCentro" onsubmit="console.log(`Enviou`)">
+      <h3>Entre em contato</h3>
+      <p>Ficaremos felizes em atendelo-lo</p>
+      <p>
+        <input id="nome" type="text" size="40" placeholder="Nome:" required />
+        <br />
 
-        <input type="text" size="40"
-        placeholder="nome"/>
+        <input
+          id="E-mail"
+          type="email"
+          size="40"
+          placeholder="Email:"
+          required
+        />
         <br />
-        <input type="text" size="40"
-        placeholder="E-mail"/>
-        <br />
-        <textarea name="" id="" cols="30" rows="10" placeholder="Mensagem:"></textarea>
-        </p>
-        <input type="submit" value="Enviar">
+        <textarea
+          name=""
+          id=""
+          cols="30"
+          rows="10"
+          placeholder="Mensagem:"
+          required
+          minlength="10"
+        ></textarea>
+      </p>
+      <input type="button" onclick="enviar()" value="Enviar" />
     </form>
+    <span id="resposta"></span>
   </body>
+  <script src="./js/scrpit.js"></script>
 </html>

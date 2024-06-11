@@ -1,0 +1,16 @@
+/* Faz aplicação global de CSS */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Variaveis que podem ser usadas em todo documento */
+/* Ativo somente no Dark mode */
+:root{
+    --bg-url: url(../img/LinkTreeDark.png)
+}
+body{
+    background: var(--bg-url) no-repeat top center / cover;
+    height: 100vh;
+}

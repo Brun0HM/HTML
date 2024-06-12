@@ -9,9 +9,9 @@
 /* Ativo somente no Dark mode */
 
 :root {
-  --bg-url: url(../img/darkbackgroud.png);
+  --bg-url: url(../img/wallpaer.jpg);
   --text-color: #fff;
-  --stroke-color: rgba(255, 255, 255, 0.5);
+  --stroke-color: rgba(255, 0, 0, 0.5);
   --surface-color: rgba(255, 255, 255, 0.1);
   --surface-color-hover: rgba(255, 255, 255, 0.2);
   --switch-btn-url: url(../img/MoonStars.svg);
@@ -20,11 +20,11 @@
 
 /* class para criar o modo light */
 .light {
-  --bg-url: url(../img/lighbackgroud.png);
-  --text-color: #000;
-  --stroke-color: rgba(0, 0, 0, 0.5);
-  --surface-color: rgba(0, 0, 0, 0.1);
-  --surface-color-hover: rgba(0, 0, 0, 0.2);
+  --bg-url: url(../img/white.jpg);
+  --text-color: #fff;
+  --stroke-color: rgba(255, 255, 255, 0.5);
+  --surface-color: rgba(0, 0, 0, 0.5);
+  --surface-color-hover: rgba(0, 0, 0, 0.5);
   --switch-btn-url: url(../img/handle.svg);
   --highlight-color: rgba(0, 0, 0, 0.3);
 }
